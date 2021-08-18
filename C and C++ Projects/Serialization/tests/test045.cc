@@ -1,0 +1,15 @@
+#include <string>
+#include "Serial.h"
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  Serial s;
+  long l {9832759025L};
+  s.put(l);
+  if (s.size()!= 6){
+      cerr << "Case45 failed" << endl;
+  }
+  return 0;
+}

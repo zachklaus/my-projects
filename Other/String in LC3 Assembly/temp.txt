@@ -1,0 +1,52 @@
+    LD R3, VALUE
+
+    AND R5, R5, #0      ; Reseting our bit counter
+
+    B_RIGHT_LOOP
+        ADD R3, R3, #-2     ; Subtract 2 from the value stored in R3
+        BRn BR_END      ; Exit the loop as soon as the number in R3 has gone negative 
+        ADD R5, R5, #1      ; Add 1 to the bit counter
+        BR B_RIGHT_LOOP     ; Start the loop over again 
+    BR_END
+
+    ST R5, ANSWER 
+	
+	
+	INNER_LOOP
+				ADD R0,R0,#-2     
+				BRn INNER_LOOP_END  
+				ADD R5,R5, #1      
+				BR INNER_LOOP     
+			INNER_LOOP_END
+			
+			
+			
+			
+			
+			
+			
+			AND R5,R5,#0
+			AND R3,R3,#0
+			ST R3,i
+			OUTER_LOOP	
+				LD R3,i
+				LD R4,limit
+				NOT R4,R4
+				ADD R4,R4,#1
+				ADD R3,R3,R4
+				BRzp OUTER_LOOP_END
+			OUTER_LOOP_INCR
+				LD R3,i
+				ADD R3,R3,#1
+				ST R3,i
+				INNER_LOOP
+					ADD R0,R0,#-2     
+					BRn INNER_LOOP_END  
+					ADD R5,R5,#1      
+					BR INNER_LOOP     
+				INNER_LOOP_END
+				BR OUTER_LOOP
+			OUTER_LOOP_END
+			ST R5,temp
+			LD R0,temp
+            RET

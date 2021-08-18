@@ -1,0 +1,42 @@
+@import "./variables";
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+  .page_title, .form_input, .btn {
+    width:350px;
+    display:flex;
+    align-items: baseline;
+    label {
+      margin-right:auto;
+      min-width: 80px;
+      font-size: 17px;
+      text-align: right;
+      padding-right: 8px;
+    }
+    input {
+      margin-left:auto;
+      margin-bottom: 15px;
+      height: 25px;
+    }
+  }
+  .page_title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    border-bottom: $backgroundColor 3px solid;
+  }
+  .btn {
+    display:block;
+    background-color: $backgroundColor;
+    text-align:center;
+    border: 0px;
+    &:hover {
+      background-color: darken($backgroundColor, 20%);
+    }
+  }
+
+}

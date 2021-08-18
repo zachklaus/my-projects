@@ -1,0 +1,5 @@
+  # return_truth_table = []
+    
+    # variables = extract_variables(expression)
+    
+    # elements = expression.split(" ")

@@ -1,0 +1,79 @@
+Here is the output for a single run of the program.
+
+Arguments:
+
+Buffer size = 10
+Maximum wait time = 3000000000
+Number of items to be produced/consumed = 25
+Number of producers = 3
+Number of consumers = 2
+
+Output:
+
+Program is now beginning.
+
+Consumer 2: Unable to consume, buffer empty, at Time: 2018/04/19 18:28:04.00690
+Consumer 1: Unable to consume, buffer empty, at Time: 2018/04/19 18:28:04.00690
+Producer 1: Placed 49 at Location 0 at Time: 2018/04/19 18:28:04.00757
+Producer 1: Placed 58 at Location 1 at Time: 2018/04/19 18:28:05.00515
+Producer 3: Placed 87 at Location 2 at Time: 2018/04/19 18:28:05.00732
+Producer 1: Placed 4 at Location 3 at Time: 2018/04/19 18:28:06.00039
+Producer 2: Placed 7 at Location 4 at Time: 2018/04/19 18:28:06.00114
+Producer 2: Placed 3 at Location 5 at Time: 2018/04/19 18:28:06.00643
+Producer 1: Placed 56 at Location 6 at Time: 2018/04/19 18:28:07.00168
+Consumer 1: Removed 49 from Location 0 at Time: 2018/04/19 18:28:07.00326
+Consumer 2: Removed 58 from Location 1 at Time: 2018/04/19 18:28:07.00531
+Producer 3: Placed 78 at Location 7 at Time: 2018/04/19 18:28:07.00591
+Producer 3: Placed 1 at Location 8 at Time: 2018/04/19 18:28:07.00718
+Consumer 2: Removed 87 from Location 2 at Time: 2018/04/19 18:28:07.00831
+Consumer 2: Removed 4 from Location 3 at Time: 2018/04/19 18:28:08.00840
+Producer 3: Placed 88 at Location 9 at Time: 2018/04/19 18:28:09.00303
+Producer 2: Placed 89 at Location 0 at Time: 2018/04/19 18:28:09.00322
+Producer 1: Placed 22 at Location 1 at Time: 2018/04/19 18:28:09.00424
+Consumer 2: Removed 7 from Location 4 at Time: 2018/04/19 18:28:09.00894
+Consumer 1: Removed 3 from Location 5 at Time: 2018/04/19 18:28:10.00303
+Consumer 2: Removed 56 from Location 6 at Time: 2018/04/19 18:28:10.00581
+Producer 3: Placed 63 at Location 2 at Time: 2018/04/19 18:28:10.00983
+Producer 3: Placed 99 at Location 3 at Time: 2018/04/19 18:28:11.00146
+Producer 2: Placed 49 at Location 4 at Time: 2018/04/19 18:28:11.00250
+Consumer 2: Removed 78 from Location 7 at Time: 2018/04/19 18:28:11.00629
+Producer 2: Placed 32 at Location 5 at Time: 2018/04/19 18:28:12.00039
+Producer 1: Placed 10 at Location 6 at Time: 2018/04/19 18:28:12.00352
+Consumer 1: Removed 1 from Location 8 at Time: 2018/04/19 18:28:12.00730
+Consumer 1: Removed 88 from Location 9 at Time: 2018/04/19 18:28:13.00243
+Consumer 1: Removed 89 from Location 0 at Time: 2018/04/19 18:28:13.00419
+Producer 3: Placed 88 at Location 7 at Time: 2018/04/19 18:28:13.00655
+Producer 2: Placed 63 at Location 8 at Time: 2018/04/19 18:28:13.00745
+Consumer 2: Removed 22 from Location 1 at Time: 2018/04/19 18:28:14.00086
+Producer 1: Placed 77 at Location 9 at Time: 2018/04/19 18:28:14.00156
+Consumer 1: Removed 63 from Location 2 at Time: 2018/04/19 18:28:14.00169
+Producer 3: Placed 42 at Location 0 at Time: 2018/04/19 18:28:14.00311
+Producer 1: Placed 98 at Location 1 at Time: 2018/04/19 18:28:14.00356
+Consumer 2: Removed 99 from Location 3 at Time: 2018/04/19 18:28:14.00397
+Consumer 2: Removed 49 from Location 4 at Time: 2018/04/19 18:28:15.00343
+Consumer 1: Removed 32 from Location 5 at Time: 2018/04/19 18:28:15.00395
+Consumer 1: Removed 10 from Location 6 at Time: 2018/04/19 18:28:15.00670
+Producer 2: Placed 4 at Location 2 at Time: 2018/04/19 18:28:16.00107
+Consumer 2: Removed 88 from Location 7 at Time: 2018/04/19 18:28:16.00117
+Consumer 1: Removed 63 from Location 8 at Time: 2018/04/19 18:28:16.00233
+Producer 1: Placed 99 at Location 3 at Time: 2018/04/19 18:28:16.00581
+Producer 1: Placed 54 at Location 4 at Time: 2018/04/19 18:28:16.00750
+Producer 3: Placed 85 at Location 5 at Time: 2018/04/19 18:28:17.00257
+Producer 2: Placed 40 at Location 6 at Time: 2018/04/19 18:28:17.00672
+Producers: Finished producing 25 items
+Consumer 2: Removed 77 from Location 9 at Time: 2018/04/19 18:28:18.00068
+Consumer 1: Removed 42 from Location 0 at Time: 2018/04/19 18:28:18.00104
+Consumer 1: Removed 98 from Location 1 at Time: 2018/04/19 18:28:18.00786
+Consumer 2: Removed 4 from Location 2 at Time: 2018/04/19 18:28:21.00031
+Consumer 1: Removed 99 from Location 3 at Time: 2018/04/19 18:28:21.00613
+Consumer 2: Removed 54 from Location 4 at Time: 2018/04/19 18:28:22.00009
+Consumer 2: Removed 85 from Location 5 at Time: 2018/04/19 18:28:22.00011
+Consumer 2: Removed 40 from Location 6 at Time: 2018/04/19 18:28:22.00788
+Consumer 2: Unable to consume, buffer empty, at Time: 2018/04/19 18:28:22.00788
+Consumer 1: Unable to consume, buffer empty, at Time: 2018/04/19 18:28:23.00189
+Consumer 2: Terminated after waiting 10 times its maximum waiting time at Time: 2018/04/19 18:28:52.00789
+Consumer 1: Terminated after waiting 10 times its maximum waiting time at Time: 2018/04/19 18:28:53.00190
+
+Program is now terminating.
+
+

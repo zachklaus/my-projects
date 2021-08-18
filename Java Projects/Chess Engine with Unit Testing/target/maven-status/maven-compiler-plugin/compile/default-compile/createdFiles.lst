@@ -1,0 +1,11 @@
+Queen.class
+IllegalPositionException.class
+Bishop.class
+Rook.class
+ChessPiece.class
+King.class
+ChessPiece$Color.class
+Pawn.class
+Knight.class
+ChessBoard.class
+IllegalMoveException.class

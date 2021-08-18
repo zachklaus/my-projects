@@ -1,0 +1,13 @@
+# Serialization
+
+- This is a project I developed over the course of a semester during my C++ programming class in college.
+- The general concept is that each "hw" file adds functionality for serializing and unserializing data.
+- Each "hw" file build on and extends the funtionality of the previous file(s).
+- Data can be input by the user from the command line or read from and output to files.
+- hw1.cc: Provides functions to read integers from standard input and output the data to a serialized format known as a "vnum".
+- hw2.cc: Adds the ability to read from multiple files as wall as chars and strings. Also adds the functionality of producing tagged vnums where the tag specifies what type of data is represented.
+- hw3.cc: Adds command line arguments. "-s" instructs the program to serialize the provided data. "-u" instructs the program to unserialize the provided data. "-v" instructs the program to announce each file before opening it. As mentioned, hw3 adds the ability to unserialize data that is provided in the serialized vnum format.
+- hw4.cc: Provides a library of functions for serializing data of various data types from an ostream into a binary format and functions for unserializing binary data from an istream back into the original unserialized format.
+- hw5.cc: Adds a class called Serial that contains a serialized string. Values can be added and only added to the front of the string and values can be removed and only removed from the back of the string. The string can also be set and retrieved. The class contains a default constructor, copy constructor, assignment operator, and destructor among other methods.
+- hw6.cc: Adds operators to the Serial class.
+- hw7.cc: Adds the classes IFSerial and OFSerial that behave similarly to ifstream and ofstream except that they read and write serialized data. OFSSerial has a constructor that takes the name of a file and contains a version of the "<<" operator to write the serialized form of various data types to the file. IFSerial has a constuctor that takes a name of a file with serialized data and operators for reading the serialized data and unserializing it into a variable of the correct data type. IFSerial also contains .eof() which returns true if the end of the file has been encountered. Both IFSerial and OFSerial contain fail() which returns true if and only if a conversion has failed or the given filename can't be opened. OFSerial and IFSerial are meant to be used on the same file, with OFStream writing serialized data to the file and IFStream reading serialized data from the file.

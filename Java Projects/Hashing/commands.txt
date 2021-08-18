@@ -1,0 +1,12 @@
+
+hasher FIRST
+table 11
+insertf u.txt
+debug 1
+print
+iterate 
+size 
+search Colorado
+remove Maine
+print
+iterate

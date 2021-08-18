@@ -1,0 +1,35 @@
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+  - mysql -u root -e 'database'
+  - for SQL in filepath*.sql; do mysql database < $SQL; done
+
+
+language: java
+jdk: oraclejdk8
+
+language: node_js
+node_js:
+  - "lts/*"  # Latest LTS Node.js release
+
+addons:
+  mariadb: 10.2
+
+cache:
+  directories:
+    - $HOME/.m2
+    - client/node_modules
+
+install:
+  - npm install --prefix client
+
+script:
+  - npm test --prefix client || travis_terminate 1
+  - mvn test || travis_terminate 2
+
+after_script:
+  - JACOCO_SOURCE_PATH=server/src/main/java ./cc-test-reporter format-coverage -t jacoco target/site/jacoco/jacoco.xml --output "codeclimate.java.json"
+  - ./cc-test-reporter format-coverage -t lcov client/coverage/lcov.info --output "codeclimate.js.json"
+  - ./cc-test-reporter sum-coverage --output "codeclimate.combined.json" codeclimate.*.json
+  - ./cc-test-reporter upload-coverage --input "codeclimate.combined.json"
